@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ventanaPrincipal</class>
+    <widget class="QMainWindow" name="ventanaPrincipal">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>637</width>
+                <height>242</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Validador</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true"/>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <property name="styleSheet">
+                <string notr="true">QWidget{
+                    background-color: rgb(114, 159, 207);
+                    }
+                    QLineEdit{
+                    border-radius:20px;
+                    background-color:white;
+                    padding-left:20px;
+
+                    }
+                    QPushButton{
+                    border-radius:20px;
+                    borber-bottom:2px solid;
+                    background-color:black;
+                    color:white;
+                    }
+
+                    QPushButton:hover{
+                    background-color:orange;
+                    }
+                </string>
+            </property>
+            <widget class="QPushButton" name="btnAceptar">
+                <property name="geometry">
+                    <rect>
+                        <x>160</x>
+                        <y>110</y>
+                        <width>291</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Aceptar</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEditClave">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>30</y>
+                        <width>501</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="placeholderText">
+                    <string>Digite su clave</string>
+                </property>
+                <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="estado">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>180</y>
+                        <width>221</width>
+                        <height>41</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>17</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+            </widget>
+            <zorder>lineEditClave</zorder>
+            <zorder>btnAceptar</zorder>
+            <zorder>estado</zorder>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
